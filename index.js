@@ -4,8 +4,33 @@ const layouts = require('express-ejs-layouts');
 const path = require('path');
 // database connection
 const db = require('./db/db');
+app.listen(port, function(err){
+  if(err){
+    console.log("Your server is been fired up");
+    
+  }
+  console.log("Your server is been running on port :" + port);
+})
 
+app.set('./', './routes/homepage/');
+app.get('./', __dirname, 'ejs');
+// the router is been added off 
+const express = require('express');
+const app = express();
+const router = express.Router();
+// the console is been fired up .
+app.get(res, req){
+  if(res)=>(){console.log("The router is been connected")}
+}
+console.log("Fired up the process");
 
+function expressWriten(node){
+  this.data = data:
+  this.set = set;
+  module.export(node);
+}
+// caling the function
+expressWriten(node.connect);
 // scondary dependencies add
 // set passport
 const passport = require('passport');
